@@ -25,7 +25,7 @@ namespace TestUnits
                 Symbol = "mol"
             });
 
-            Assert.False(result.IsSuccessful, "1 should not be prime");
+            Assert.False(result.IsSuccessful, "متد یا مشکل مواجه شد");
         }
 
         [Fact]
@@ -40,68 +40,68 @@ namespace TestUnits
                 ParentId = 1
             });
 
-            Assert.False(result.IsSuccessful, "1 should not be prime");
+            Assert.False(result.IsSuccessful, "متد یا مشکل مواجه شد");
         }
 
-        [Fact]
-        public async Task AddBasicUnitTest()
-        {
-            var result = await _unitService.AddBasicUnitAsync(new AddBasicUnitRequest()
-            {
-                Title = "مول",
-                EnTitle = "mole",
-                Measurment = "مقدار ماده",
-                EnMeasurment = "amount of substance",
-                Symbol = "mol"
-            });
+        //[Fact]
+        //public async Task AddFormulaUnitTest()
+        //{
+        //    var result = await _unitService.AddFormulaUnitAsync(new AddFormulaUnitRequest()
+        //    {
+        //        Title = "مول",
+        //        EnTitle = "mole",
+        //        Measurment = "مقدار ماده",
+        //        EnMeasurment = "amount of substance",
+        //        Symbol = "mol"
+        //    });
 
-            Assert.False(result.IsSuccessful, "1 should not be prime");
-        }
+        //    Assert.False(result.IsSuccessful, "متد یا مشکل مواجه شد");
+        //}
 
-        [Fact]
-        public async Task AddBasicUnitTest()
-        {
-            var result = await _unitService.AddBasicUnitAsync(new AddBasicUnitRequest()
-            {
-                Title = "مول",
-                EnTitle = "mole",
-                Measurment = "مقدار ماده",
-                EnMeasurment = "amount of substance",
-                Symbol = "mol"
-            });
+        //[Fact]
+        //public async Task AddBasicUnitTest()
+        //{
+        //    var result = await _unitService.AddBasicUnitAsync(new AddBasicUnitRequest()
+        //    {
+        //        Title = "مول",
+        //        EnTitle = "mole",
+        //        Measurment = "مقدار ماده",
+        //        EnMeasurment = "amount of substance",
+        //        Symbol = "mol"
+        //    });
 
-            Assert.False(result.IsSuccessful, "1 should not be prime");
-        }
+        //    Assert.False(result.IsSuccessful, "متد یا مشکل مواجه شد");
+        //}
 
-        [Fact]
-        public async Task AddBasicUnitTest()
-        {
-            var result = await _unitService.AddBasicUnitAsync(new AddBasicUnitRequest()
-            {
-                Title = "مول",
-                EnTitle = "mole",
-                Measurment = "مقدار ماده",
-                EnMeasurment = "amount of substance",
-                Symbol = "mol"
-            });
+        //[Fact]
+        //public async Task AddBasicUnitTest()
+        //{
+        //    var result = await _unitService.AddBasicUnitAsync(new AddBasicUnitRequest()
+        //    {
+        //        Title = "مول",
+        //        EnTitle = "mole",
+        //        Measurment = "مقدار ماده",
+        //        EnMeasurment = "amount of substance",
+        //        Symbol = "mol"
+        //    });
 
-            Assert.False(result.IsSuccessful, "1 should not be prime");
-        }
+        //    Assert.False(result.IsSuccessful, "متد یا مشکل مواجه شد");
+        //}
 
-        [Fact]
-        public async Task AddBasicUnitTest()
-        {
-            var result = await _unitService.AddBasicUnitAsync(new AddBasicUnitRequest()
-            {
-                Title = "مول",
-                EnTitle = "mole",
-                Measurment = "مقدار ماده",
-                EnMeasurment = "amount of substance",
-                Symbol = "mol"
-            });
+        //[Fact]
+        //public async Task AddBasicUnitTest()
+        //{
+        //    var result = await _unitService.AddBasicUnitAsync(new AddBasicUnitRequest()
+        //    {
+        //        Title = "مول",
+        //        EnTitle = "mole",
+        //        Measurment = "مقدار ماده",
+        //        EnMeasurment = "amount of substance",
+        //        Symbol = "mol"
+        //    });
 
-            Assert.False(result.IsSuccessful, "1 should not be prime");
-        }
+        //    Assert.False(result.IsSuccessful, "متد یا مشکل مواجه شد");
+        //}
 
     }
 }
