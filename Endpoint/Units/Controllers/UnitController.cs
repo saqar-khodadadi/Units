@@ -22,7 +22,7 @@ namespace Units.Controllers
         #region AddUnits
 
         [HttpPost]
-        public async Task<IActionResult> AddBasicUnit(AddBasicUnitRequest request)
+        public async Task<ActionResult<AddBasicUnitResponse>> AddBasicUnit(AddBasicUnitRequest request)
         {
             try
             {
@@ -37,7 +37,7 @@ namespace Units.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddMultipleUnit(AddMultipleUnitRequest request)
+        public async Task<ActionResult<AddMultipleUnitResponse>> AddMultipleUnit(AddMultipleUnitRequest request)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace Units.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddFormulaUnit(AddFormulaUnitRequest request)
+        public async Task<ActionResult<AddFormulaUnitResponse>> AddFormulaUnit(AddFormulaUnitRequest request)
         {
             try
             {
@@ -71,7 +71,7 @@ namespace Units.Controllers
         #region AddFactors
 
         [HttpPost]
-        public async Task<IActionResult> AddMultipleFactor(AddMultipleFactorRequest request)
+        public async Task<ActionResult<AddMultipleFactorResponse>> AddMultipleFactor(AddMultipleFactorRequest request)
         {
             try
             {
@@ -86,7 +86,7 @@ namespace Units.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddFormulaFactor(AddFormulaFactorRequest request)
+        public async Task<ActionResult<AddFormulaFactorResponse>> AddFormulaFactor(AddFormulaFactorRequest request)
         {
             try
             {

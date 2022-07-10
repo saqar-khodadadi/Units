@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Application.Services.Contracts;
 using Application.Services.DTOs.AddFactors;
@@ -16,8 +17,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Application.Services.Services
 {
-    public class UnitService : IUnitService, IAsyncDisposable
+    public class UnitService : IUnitService, IDisposable, IAsyncDisposable
     {
+        private Utf8JsonWriter? _jsonWriter = new(new MemoryStream());
         private readonly UnitDbContext _context;
         public UnitService(UnitDbContext context)
         {
@@ -163,11 +165,18 @@ namespace Application.Services.Services
         }
 
         #endregion
+
+        public void Dispose()
+        {
+            _context.SaveChanges();
+            _context.Dispose();
+        }
+
         public async ValueTask DisposeAsync()
         {
             await _context.SaveChangesAsync();
+            await _context.DisposeAsync();
         }
-
     }
 }
 

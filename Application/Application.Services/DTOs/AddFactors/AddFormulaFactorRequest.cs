@@ -13,6 +13,8 @@ namespace Application.Services.DTOs.AddFactors
         [RegularExpression(@"[.+*-/ ()a[0-9]*",
         ErrorMessage = "لطفا فرمول را صحیح وارد کنید")]
         public string ToValue { get; set; }
+        [RegularExpression(@"[.+*-/ ()a[0-9]*",
+            ErrorMessage = "لطفا فرمول را صحیح وارد کنید")]
         public string ToBase { get; set; }
     }
 }

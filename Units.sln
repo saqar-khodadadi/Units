@@ -11,19 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{18DB38E4-A5E0-4E68-A328-2228AEFE31FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Units", "Endpoint\Units\Units.csproj", "{4631E19A-9C36-4335-B9E2-A1C26FBCECB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Units", "Endpoint\Units\Units.csproj", "{4631E19A-9C36-4335-B9E2-A1C26FBCECB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.DataAccess", "Infrastructure\Infrastructure.DataAccess\Infrastructure.DataAccess.csproj", "{E1CE9E6E-14A3-4BBD-9BE1-1E7953FB6974}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.DataAccess", "Infrastructure\Infrastructure.DataAccess\Infrastructure.DataAccess.csproj", "{E1CE9E6E-14A3-4BBD-9BE1-1E7953FB6974}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Common", "Core\Core.Common\Core.Common.csproj", "{4013ECFB-7D2B-4677-A3DD-99B869F6E95D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Common", "Core\Core.Common\Core.Common.csproj", "{4013ECFB-7D2B-4677-A3DD-99B869F6E95D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain", "Core.Domain\Core.Domain.csproj", "{82144DDE-7F09-43BC-8736-A42AC5B66988}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain", "Core.Domain\Core.Domain.csproj", "{82144DDE-7F09-43BC-8736-A42AC5B66988}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Services", "Application\Application.Services\Application.Services.csproj", "{ED0B5E1E-0C69-4526-AB7A-E4AE273D239E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Services", "Application\Application.Services\Application.Services.csproj", "{ED0B5E1E-0C69-4526-AB7A-E4AE273D239E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A48942DD-FE48-4D82-9DD1-C81E38EFF717}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnits", "Test\TestUnits\TestUnits\TestUnits.csproj", "{4DAFB2BC-45C4-400F-8848-BD3C4DFF706E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestUnits", "Test\TestUnits\TestUnits\TestUnits.csproj", "{4DAFB2BC-45C4-400F-8848-BD3C4DFF706E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

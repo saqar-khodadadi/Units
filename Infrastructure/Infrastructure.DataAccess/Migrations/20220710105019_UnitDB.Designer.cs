@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.DataAccess.Migrations
 {
     [DbContext(typeof(UnitDbContext))]
-    [Migration("20220709113348_UnitDB")]
+    [Migration("20220710105019_UnitDB")]
     partial class UnitDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -86,7 +86,7 @@ namespace Infrastructure.DataAccess.Migrations
                             CreationDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             KindId = 3,
                             Title = "فارنهایت",
-                            ToBase = "(a − 32) × 5/9",
+                            ToBase = "(a - 32) * 5/9",
                             ToValue = "(a * 9/5) + 32"
                         },
                         new
@@ -122,7 +122,7 @@ namespace Infrastructure.DataAccess.Migrations
                             CreationDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             KindId = 2,
                             Title = "کلوین",
-                            ToBase = "a − 273.15",
+                            ToBase = "a - 273.15",
                             ToValue = "a + 273.15"
                         });
                 });
